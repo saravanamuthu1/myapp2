@@ -30,7 +30,7 @@ function Dashboard(){
       }
     return(
         <>
-         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+         <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
         <Navbar.Brand>Dashboard</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
