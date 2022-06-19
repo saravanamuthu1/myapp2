@@ -115,9 +115,9 @@ class Publication extends React.Component {
                 return (
                   <li key={item.id}>
                     {item.value}
-                    <button className="btn btn-floating" onClick={() => this.deleteItem(item.id)}>
-                      <i class="material-icons">x</i>
-                    </button>
+                    <Button className="light" onClick={() => this.deleteItem(item.id)}>
+                      <i class="material-icons">**Remove**</i>
+                    </Button>
                   </li>
                 );
               })}
