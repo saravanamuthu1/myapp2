@@ -12,12 +12,15 @@ import Home from './Components/Home';
 import Publication from './Components/Publication';
 import Project from './Components/Project';
 import Projectmembers from './Components/Projectmembers';
+import Forgetpassword from './Components/Forgetpassword';
 function App() {
   return (
   <AuthProvider>
 <Routes>
+
           <Route exact path="/" element={<Login />}/> 
           <Route exact path="/signup" element={<Signup/>}/> 
+          <Route exact path="/forgetpassword" element={<Forgetpassword/>}/> 
           <Route exact path="/dashboard" element={<Dashboard />}>
           <Route exact path="/dashboard/Home" element={<Home/>}/>
           <Route exact path="/dashboard/Projectmembers" element={<Projectmembers />}/>

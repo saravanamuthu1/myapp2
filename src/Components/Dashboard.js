@@ -43,7 +43,6 @@ function Dashboard(){
             <Nav.Link onClick={handleLogout}> Log Out </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
       </Container>
     </Navbar>
     <Outlet />

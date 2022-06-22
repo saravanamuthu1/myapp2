@@ -24,6 +24,7 @@ export default function Signup() {
       setError("")
       setLoading(true)
       await signup(emailRef.current.value, passwordRef.current.value)
+      alert("signed up successdfully")
       history("/login")
     } catch {
       setError("failed to sign up")
