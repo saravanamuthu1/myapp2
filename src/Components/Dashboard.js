@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
-import { Card,Container,Button } from 'react-bootstrap';
-import ReactDOM from 'react-dom/client';
-import InputGroup from 'react-bootstrap/InputGroup';
-import { Form } from 'react-bootstrap';
-import { BrowserRouter } from 'react-router-dom';
-import { NavLink, Outlet } from 'react-router-dom';
+import {Container} from 'react-bootstrap';
+import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Home from './Home';
-import Projectmembers from './Projectmembers';
-import Publication from './Publication';
-import Project from './Project';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from "../contexts/AuthContext"
+import { useAuth } from "../contexts/AuthContext";
+
 function Dashboard(){
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
@@ -29,8 +22,8 @@ function Dashboard(){
         }
       }
     return(
-        <>
-         <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
+      <div>
+      <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
         <Navbar.Brand>Dashboard</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -43,10 +36,10 @@ function Dashboard(){
             <Nav.Link onClick={handleLogout}> Log Out </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+        </Container>
     </Navbar>
     <Outlet />
-        </>
+      </div>
     )
 }
 export default Dashboard

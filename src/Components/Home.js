@@ -1,8 +1,66 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { Navbar, Row } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Link, Outlet } from 'react-router-dom';
+import {
+    CDBSidebar,
+    CDBSidebarHeader,
+    CDBSidebarMenuItem,
+    CDBSidebarContent,
+    CDBSidebarMenu,
+    CDBSidebarSubMenu,
+    CDBSidebarFooter,
+    CDBBadge,
+    CDBContainer,
+  } from 'cdbreact';
+import './Sidebar.css';
 function Home(){
     return(
-        <h1>this is the home</h1>
+    <>
+      <CDBSidebar textColor="#333" backgroundColor="#f0f0f0">
+        <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>
+          <div className="container" style={{ display: 'flex', alignItems: 'center'}}>
+            <img
+              src={'https://seeklogo.com/images/B/butterfly-logo-0A00378822-seeklogo.com.png'}
+              alt=""
+              style={{ width: '30px' }}
+            />
+            <h6 className="ml-2">Menu</h6>
+          </div>
+        </CDBSidebarHeader>
+        <div className="contianer1">
+        <CDBSidebarContent>
+          <CDBSidebarMenu>
+            <CDBSidebarMenuItem icon="th-large">  <Navbar>
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
+        </Navbar></CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="sticky-note">Components</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="chart-line" iconType="solid">
+              metrics
+            </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="th-large">  <Navbar>
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
+        </Navbar></CDBSidebarMenuItem>
+        <CDBSidebarMenuItem icon="th-large">  <Navbar>
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
+        </Navbar></CDBSidebarMenuItem>
+        <CDBSidebarMenuItem icon="th-large">  <Navbar>
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
+        </Navbar></CDBSidebarMenuItem>
+          </CDBSidebarMenu>
+        </CDBSidebarContent>
+        </div>
+        <CDBSidebarFooter style={{ textAlign: 'center' }}>
+          <div
+            className="sidebar-btn-wrapper"
+            style={{padding: '20px 5px'}}
+          >
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Logout</Nav.Link>
+          </div>
+        </CDBSidebarFooter>
+        </CDBSidebar>
+        <Outlet />
+        </>
     )
 }
 export default Home

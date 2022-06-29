@@ -1,16 +1,13 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert, Container } from "react-bootstrap"
 import { useAuth } from "../contexts/AuthContext"
-import { Link, useNavigate } from "react-router-dom"
-import Dashboard from "./Dashboard"
+import { Link, } from "react-router-dom"
 export default function Forgetpassword() {
   const emailRef = useRef()
-  const passwordRef = useRef()
   const { resetPassword } = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const [Message,setMessage] = useState("")
-  let  history = useNavigate()
 
   async function handleSubmit(e) {
     e.preventDefault()

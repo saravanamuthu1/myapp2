@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert,Container } from "react-bootstrap"
 import { Link, useNavigate } from "react-router-dom"
-import Dashboard from "./Dashboard"
+
 import { useAuth } from "../contexts/AuthContext"
 
 export default function Signup() {
