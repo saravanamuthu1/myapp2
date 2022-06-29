@@ -23,6 +23,8 @@ function App() {
           <Route exact path="/dashboard" element={<Dashboard />}>
           <Route exact path="/dashboard/Home" element={<Home/>}>
           <Route exact path="/dashboard/Home/Home/Sidebar" element={<Sidebar />}/>
+          <Route exact path="/dashboard/Home/Project" element={<Project/>}/>
+          <Route exact path="/dashboard/Home/Projectmembers/" element={<Projectmembers />}/>
           </Route>
          <Route exact path="/dashboard/Projectmembers" element={<Projectmembers />}/>
           <Route exact path="/dashboard/Project" element={<Project/>}/>

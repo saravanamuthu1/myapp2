@@ -36,13 +36,13 @@ function Home(){
         </Navbar></CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sticky-note">Components</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line" iconType="solid">
-              metrics
+            <Nav.Link as ={Link} to= {"/dashboard/Home/Project"}>Project</Nav.Link>
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="th-large">  <Navbar>
             <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
         </Navbar></CDBSidebarMenuItem>
         <CDBSidebarMenuItem icon="th-large">  <Navbar>
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
+        <Nav.Link as ={Link} to={"/dashboard/Home/Projectmembers"}>Projectmembers</Nav.Link>
         </Navbar></CDBSidebarMenuItem>
         <CDBSidebarMenuItem icon="th-large">  <Navbar>
             <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
