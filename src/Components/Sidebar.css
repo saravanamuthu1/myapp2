@@ -1,0 +1,6 @@
+.elem{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    width: 800px;
+}

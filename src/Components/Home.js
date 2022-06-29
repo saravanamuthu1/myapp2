@@ -16,10 +16,10 @@ import {
 import './Sidebar.css';
 function Home(){
     return(
-    <>
-      <CDBSidebar textColor="#333" backgroundColor="#f0f0f0">
+    <div className='Container'style={{display:'flex'}}>
+      <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>
-          <div className="container" style={{ display: 'flex', alignItems: 'center'}}>
+          <div className="container" style={{display:'flex',alignItems: 'center',positon:"fixed"}}>
             <img
               src={'https://seeklogo.com/images/B/butterfly-logo-0A00378822-seeklogo.com.png'}
               alt=""
@@ -28,7 +28,7 @@ function Home(){
             <h6 className="ml-2">Menu</h6>
           </div>
         </CDBSidebarHeader>
-        <div className="contianer1">
+        <div className='Container'style={{height:'550px'}}>
         <CDBSidebarContent>
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="th-large">  <Navbar>
@@ -60,7 +60,7 @@ function Home(){
         </CDBSidebarFooter>
         </CDBSidebar>
         <Outlet />
-        </>
+        </div>
     )
 }
 export default Home
