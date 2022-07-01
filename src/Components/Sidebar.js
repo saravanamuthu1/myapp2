@@ -6,11 +6,7 @@ function Sidebar(){
   return (
     <div className='elem'>
     <br></br>
-    <InputGroup>
-    <InputGroup.Text>Enter the publication details</InputGroup.Text>
-    <FormControl as="textarea" aria-label="With textarea" />
-    <Button variant="primary">submit</Button>
-  </InputGroup>
+    <h1>this is the homepage</h1>
     </div>
   )
 };

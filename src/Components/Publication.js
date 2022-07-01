@@ -1,5 +1,6 @@
 import React from 'react';
-import { FormControl,InputGroup, Button,Container} from 'react-bootstrap';
+import { FormControl,InputGroup, Button,Container, Row} from 'react-bootstrap';
+import "./Sidebar.css";
 
 class Publication extends React.Component {
     constructor(props) {
@@ -96,6 +97,7 @@ class Publication extends React.Component {
     render() {
       return (
         <>
+ <Row>
 <Container>
     <br></br>
     <h1>Enter the Publication</h1>
@@ -106,8 +108,9 @@ class Publication extends React.Component {
     <Button variant="primary" onClick={() => this.addItem()}>submit</Button>
   </InputGroup>
     </Container>
-    <br /> <br />
     <Container>
+    <Row>
+    <br /> <br />
       <h1>Publications:</h1>
             <ul>
               {this.state.list.map(item => {
@@ -121,7 +124,9 @@ class Publication extends React.Component {
                 );
               })}
             </ul>
+            </Row>
             </Container>
+          </Row>
         </>
       );
     }

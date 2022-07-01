@@ -31,21 +31,17 @@ function Home(){
         <div className='Container'style={{height:'550px'}}>
         <CDBSidebarContent>
           <CDBSidebarMenu>
-            <CDBSidebarMenuItem icon="th-large">  <Navbar>
+          <CDBSidebarMenuItem icon="th-large">  <Navbar>
             <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
         </Navbar></CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="sticky-note">Components</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="th-large">  <Navbar>
+            <Nav.Link as ={Link} to={"/dashboard/Home/Home/publication"}>publication</Nav.Link>
+        </Navbar></CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="chart-line" iconType="solid">
             <Nav.Link as ={Link} to= {"/dashboard/Home/Project"}>Project</Nav.Link>
             </CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="th-large">  <Navbar>
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
-        </Navbar></CDBSidebarMenuItem>
         <CDBSidebarMenuItem icon="th-large">  <Navbar>
         <Nav.Link as ={Link} to={"/dashboard/Home/Projectmembers"}>Projectmembers</Nav.Link>
-        </Navbar></CDBSidebarMenuItem>
-        <CDBSidebarMenuItem icon="th-large">  <Navbar>
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
         </Navbar></CDBSidebarMenuItem>
           </CDBSidebarMenu>
         </CDBSidebarContent>
