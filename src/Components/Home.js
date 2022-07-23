@@ -2,60 +2,44 @@ import React from 'react';
 import { Navbar, Row } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Link, Outlet } from 'react-router-dom';
-import {
-    CDBSidebar,
-    CDBSidebarHeader,
-    CDBSidebarMenuItem,
-    CDBSidebarContent,
-    CDBSidebarMenu,
-    CDBSidebarSubMenu,
-    CDBSidebarFooter,
-    CDBBadge,
-    CDBContainer,
-  } from 'cdbreact';
-import './Sidebar.css';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+
 function Home(){
     return(
-    <div className='Container'style={{display:'flex'}}>
-      <CDBSidebar textColor="#fff" backgroundColor="#333">
-        <CDBSidebarHeader prefix={<i className="fa fa-bars" />}>
-          <div className="container" style={{display:'flex',alignItems: 'center',positon:"fixed"}}>
-            <img
-              src={'https://seeklogo.com/images/B/butterfly-logo-0A00378822-seeklogo.com.png'}
-              alt=""
-              style={{ width: '30px' }}
-            />
-            <h6 className="ml-2">Menu</h6>
-          </div>
-        </CDBSidebarHeader>
-        <div className='Container'style={{height:'550px'}}>
-        <CDBSidebarContent>
-          <CDBSidebarMenu>
-          <CDBSidebarMenuItem icon="th-large">  <Navbar>
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Home</Nav.Link>
-        </Navbar></CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="th-large">  <Navbar>
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/publication"}>publication</Nav.Link>
-        </Navbar></CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="chart-line" iconType="solid">
-            <Nav.Link as ={Link} to= {"/dashboard/Home/Project"}>Project</Nav.Link>
-            </CDBSidebarMenuItem>
-        <CDBSidebarMenuItem icon="th-large">  <Navbar>
-        <Nav.Link as ={Link} to={"/dashboard/Home/Projectmembers"}>Projectmembers</Nav.Link>
-        </Navbar></CDBSidebarMenuItem>
-          </CDBSidebarMenu>
-        </CDBSidebarContent>
-        </div>
-        <CDBSidebarFooter style={{ textAlign: 'center' }}>
-          <div
-            className="sidebar-btn-wrapper"
-            style={{padding: '20px 5px'}}
-          >
-            <Nav.Link as ={Link} to={"/dashboard/Home/Home/Sidebar"}>Logout</Nav.Link>
-          </div>
-        </CDBSidebarFooter>
-        </CDBSidebar>
-        <Outlet />
+      <div>
+        <br></br>
+    <Container>
+    <Card className="text">
+      <Card.Header><h1>Saravanamuthu Muthusamy</h1></Card.Header>
+      <Card.Body>
+        <Card.Title>About</Card.Title>
+        <Card.Text>
+        <p> <li>I am a passionate, self-driven, proactive, and quick learner with a passion for developing software using python,react and Django framework.</li> 
+        <li>I have 4 years of  hands on experience with python programming</li>
+        <li>I am currently pursuing master's in computer science at Saint Louis University.</li></p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <br></br>
+    <Card className="text">
+      <Card.Body>
+        <Card.Title>Progamming skills</Card.Title>
+        <Card.Text>
+        <p> <li>Python</li> 
+        <li>javascript</li>
+        <li>HTML and CSS </li>
+        <li>React js </li>
+        <li>Django</li>
+        <li>My sql and postgre sql</li>
+        <li>Google Firebase</li>
+        <li>Aws s3</li>
+        <li>Aws Sagemaker</li>
+        </p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+</Container>
         </div>
     )
 }

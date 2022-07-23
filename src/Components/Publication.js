@@ -110,20 +110,22 @@ class Publication extends React.Component {
     </Container>
     <Container>
     <Row>
-    <br /> <br />
       <h1>Publications:</h1>
+      <Container>
             <ul>
               {this.state.list.map(item => {
                 return (
                   <li key={item.id}>
                     {item.value}
-                    <Button className="light" onClick={() => this.deleteItem(item.id)}>
-                      <i class="material-icons">**Remove**</i>
-                    </Button>
+                    <br></br>
+                  <Button className="primary" onClick={() => this.deleteItem(item.id)}>
+                    <i class="material-icons">X</i>
+                  </Button>
                   </li>
                 );
               })}
             </ul>
+      </Container>
             </Row>
             </Container>
           </Row>

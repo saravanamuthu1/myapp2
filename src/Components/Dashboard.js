@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from "../contexts/AuthContext";
+import Footerfunc from './Footerfunc';
 
 function Dashboard(){
     const [error, setError] = useState("")
@@ -22,6 +23,7 @@ function Dashboard(){
         }
       }
     return(
+      <>
       <div>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
@@ -40,6 +42,7 @@ function Dashboard(){
     </Navbar>
     <Outlet />
       </div>
+      </>
     )
 }
 export default Dashboard

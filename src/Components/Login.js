@@ -18,7 +18,7 @@ export default function Login() {
       setError("")
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
-      history("/dashboard")
+      history("/dashboard/Home")
     } catch {
       setError("failed to login")
     }
