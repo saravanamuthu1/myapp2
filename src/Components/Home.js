@@ -1,7 +1,4 @@
 import React from 'react';
-import { Navbar, Row } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Link, Outlet } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 

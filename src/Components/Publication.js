@@ -117,7 +117,6 @@ class Publication extends React.Component {
                 return (
                   <li key={item.id}>
                     {item.value}
-                    <br></br>
                   <Button className="primary" onClick={() => this.deleteItem(item.id)}>
                     <i class="material-icons">X</i>
                   </Button>

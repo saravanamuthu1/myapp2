@@ -1,7 +1,5 @@
 import React from 'react';
 import "./Sidebar.css";
-
-import { FormControl,InputGroup, Button,Container} from 'react-bootstrap';
 function Sidebar(){
   return (
     <div className='elem'>

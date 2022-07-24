@@ -21,6 +21,7 @@ export function AuthProvider({children}){
         return auth.signOut()
       }
       function resetPassword(email) {
+        alert("check your for further instruction ")
         return auth.sendPasswordResetEmail(email)
       }
 
